@@ -23,7 +23,7 @@ It includes sections like Hero, Features, Testimonials, Logo Slider, and Newslet
 
 ## Preview
 
-Preview: <img width="1900" height="5655" alt="jadoo-layout" src="https://github.com/user-attachments/assets/20f59e9e-5c85-4a50-bc32-f520012f96fe" />
+Preview: <img width="1900" height="8655" alt="jadoo-layout" src="https://github.com/user-attachments/assets/20f59e9e-5c85-4a50-bc32-f520012f96fe" />
 
 ## Deployment
 
