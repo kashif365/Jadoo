@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Jadoo - Book your dream trip with ease. Discover top destinations, best flights, and amazing travel experiences. Fast, secure, and reliable booking in minutes." />
+  <meta name="keywords" content="travel, destinations, flights, hotels, bookings, vacation, trip planner" />
+  <meta name="author" content="Jadoo" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Jadoo - Your Travel Partner" />
+  <meta property="og:description" content="Book your dream trip with ease. Discover top destinations, best flights, and amazing travel experiences." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="./img/Logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Jadoo - Your Travel Partner" />
+  <meta name="twitter:description" content="Book your dream trip with ease. Discover top destinations, best flights, and amazing travel experiences." />
+  <meta name="theme-color" content="#df6951" />
+  <title>Jadoo - Your Travel Partner | Book Amazing Trips Online</title>
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Jadoo",
+    "url": "https://jadoo.com",
+    "logo": "https://jadoo.com/img/Logo.png",
+    "description": "Book your dream trip with ease. Discover top destinations, best flights, and amazing travel experiences.",
+    "sameAs": [
+      "https://www.facebook.com/jadoo",
+      "https://www.instagram.com/jadoo",
+      "https://www.twitter.com/jadoo"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "",
+      "addressCountry": "US"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Customer Service"
+    }
+  }
+  </script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Volkhov:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.cdnfonts.com/css/google-sans" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+  <div class="hero-section">
+    <nav class="navbar navbar-expand-lg pt-4">
+      <div class="container">
+        <!-- Logo (Left) -->
+        <a class="navbar-brand" href="#">
+          <img src="./img/Logo.png" alt="Logo" height="40" />
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button class="navbar-toggler border-0 shadow-sm" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Content -->
+        <div class="collapse navbar-collapse d-lg-flex" id="navbarNav">
+          <!-- Center Menu -->
+          <ul class="navbar-nav mx-auto gap-5">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hotels</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Flights</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Bookings</a>
+            </li>
+          </ul>
+
+          <!-- Right Side -->
+          <ul class="navbar-nav align-items-center gap-5">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-dark rounded px-4 ms-2" href="#">Sign Up</a>
+            </li>
+            <li class="nav-item dropdown ms-3">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                EN
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">EN</a></li>
+                <li><a class="dropdown-item" href="#">FR</a></li>
+                <li><a class="dropdown-item" href="#">DE</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Offcanvas Menu -->
+        <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="navbarOffcanvas"
+          aria-labelledby="navbarOffcanvasLabel" style="background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);">
+          <div class="offcanvas-header border-bottom py-3">
+            <a class="offcanvas-title" id="navbarOffcanvasLabel" href="#">
+              <img src="./img/Logo.png" alt="Logo" height="40" />
+            </a>
+            <button type="button" class="btn-close shadow-sm" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body p-4">
+            <ul class="navbar-nav flex-grow-1">
+              <li class="nav-item mb-3">
+                <a class="nav-link active fw-500" href="#">Destinations</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a class="nav-link fw-500" href="#">Hotels</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a class="nav-link fw-500" href="#">Flights</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a class="nav-link fw-500" href="#">Bookings</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a class="nav-link fw-500" href="#">Login</a>
+              </li>
+              <li class="nav-item mb-4">
+                <a class="btn btn-warning text-white rounded px-4 w-100 fw-500" href="#">Sign Up</a>
+              </li>
+              <li class="nav-item dropdown border-top pt-4">
+                <a class="nav-link dropdown-toggle fw-500 pt-3" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <i class="fas fa-globe me-2"></i>EN
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">EN</a></li>
+                  <li><a class="dropdown-item" href="#">FR</a></li>
+                  <li><a class="dropdown-item" href="#">DE</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container hero-section-primium">
+      <div class="row align-items-center">
+        <div class="col-lg-5 hero-content">
+          <div class="span-text mb-3">Best Destinations around the world</div>
+          <h1 class="pb-3">
+            Travel, <span class="highlight-text">enjoy</span> and live a new
+            and full life
+          </h1>
+          <p class="pb-3">
+            Built Wicket longer admire do barton vanity itself do in it.
+            Preferred to sportsmen it engrossed listening. Park gate sell they
+            west hard for the.
+          </p>
+          <div class="d-flex gap-2 gap-lg-4 align-items-center flex-wrap">
+            <a href="" class="btn btn-warning text-white rounded px-3 px-lg-4 py-2 text-bold flex-shrink-0">Find Out
+              More</a>
+            <a href="" class="d-flex align-items-center gap-2" style="text-decoration: none">
+              <div class="rounded-circle d-flex align-items-center justify-content-center"
+                style="width: 50px; height: 50px; background-color: #df6951">
+                <i class="fas fa-play text-white" style="font-size: 18px"></i>
+              </div>
+              <div class="text-muted">Play Demo</div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-7 hero-img">
+          <img src="./img/hero-section-img.png" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -------------------- -->
+  <!-- categeory section -->
+  <!-- -------------------- -->
+  <div class="container category-section section-margin">
+    <div class="category-header mb-12">
+      <h2 class="section-badge">CATEGORY</h2>
+      <p>We Offer Best Services</p>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch">
+        <div class="category-card text-center p-4 w-100">
+          <img src="./img/antena.png" height="100" alt="Category 1" class="mb-3" />
+          <h5>Calculated Weather</h5>
+          <p class="w-75 mx-auto">Built Wicket longer admire do barton vanity itself do in it.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4 d-flex justify-content-center">
+        <div class="rectangle-card">
+          <div class="category-card flight-card text-center p-4">
+            <img src="./img/areoplane.png" height="90" alt="Best Flights" class="mb-3" />
+            <div class="text-center">
+              <h5>Best Flights</h5>
+              <p class="w-75 mx-auto">Engrossed listening. Park gate sell they west hard for the.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch">
+        <div class="category-card text-center p-4 w-100">
+          <img src="./img/mic.png" height="100" alt="Category 2" class="mb-3" />
+          <h5>Local Events</h5>
+          <p class="w-75 mx-auto">
+            Barton vanity itself do in it. Preferd to men it engrossed
+            listening.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch">
+        <div class="category-card text-center p-4 w-100">
+          <img src="./img/gear.png" height="100" alt="Category 2" class="mb-3" />
+          <h5>Customization</h5>
+          <p class="w-75 mx-auto">
+            We deliver outsourced aviation services for military customers
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -------------------- -->
+  <!-- selling section -->
+  <!-- -------------------- -->
+  <div class="container selling-section section-margin">
+    <div class="selling-header mb-12">
+      <h2 class="section-badge">SELLING</h2>
+      <p>Top Destinations</p>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="destination-card">
+          <img src="./img/italy-rome.jpg" alt="Rome, Italy" class="destination-img" />
+
+          <div class="destination-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h5 class="mb-0">Rome, Italy</h5>
+              <span class="price">$5,42k</span>
+            </div>
+
+            <div class="d-flex align-items-center gap-2 trip-info">
+              <i class="fas fa-location-arrow"></i>
+              <span>10 Days Trip</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="destination-card">
+          <img src="./img/clock-tower.jpeg" alt="Clock Tower" class="destination-img" />
+
+          <div class="destination-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h5 class="mb-0">London, UK</h5>
+              <span class="price">$5,42k</span>
+            </div>
+
+            <div class="d-flex align-items-center gap-2 trip-info">
+              <i class="fas fa-location-arrow"></i>
+              <span>12 Days Trip</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-4 col-md-12 col-sm-12 mb-4 europe-card">
+        <div class="destination-card">
+          <img src="./img/europe.jpeg" alt="Rome, Italy" class="destination-img" />
+
+          <div class="destination-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h5 class="mb-0">Full Europe</h5>
+              <span class="price">$15k</span>
+            </div>
+
+            <div class="d-flex align-items-center gap-2 trip-info">
+              <i class="fas fa-location-arrow"></i>
+              <span>28 Days Trip</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -------------------- -->
+  <!-- trip section -->
+  <!-- -------------------- -->
+  <div class="container trip-section section-margin">
+    <h2 class="section-badge text-start">Easy and Fast</h2>
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h3 class="trip-section-title text-start">Book your next trip in 3 easy steps</h3>
+        <div class="d-flex gap-4 align-items-start mb-4 mt-5">
+          <div class="icon-box yellow-box d-flex align-items-center justify-content-center">
+            <img src="./img/selection 1.png" alt="">
+          </div>
+          <div class="content-box">
+            <h5>Choose Destination</h5>
+            <p class="w-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
+          </div>
+        </div>
+        <div class="d-flex gap-4 align-items-start mb-4">
+          <div class="icon-box red-box d-flex align-items-center justify-content-center">
+            <img src="./img/water-sport 1.png" alt="">
+          </div>
+          <div class="content-box">
+            <h5>Make Payment</h5>
+            <p class="w-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
+          </div>
+        </div>
+        <div class="d-flex gap-4 align-items-start mb-4">
+          <div class="icon-box green-box d-flex align-items-center justify-content-center">
+            <img src="./img/taxi 1.png" alt="">
+          </div>
+          <div class="content-box">
+            <h5>Reach Airport on Selected Date</h5>
+            <p class="w-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-6">
+        <img src="./img/trip-section-img.png" class="trip-img img-fluid" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- -------------------- -->
+  <!-- testimonial section -->
+  <!-- -------------------- -->
+  <div class="container testimonial-section section-margin">
+    <div class="row align-items-center">
+      <div class="col-lg-6 position-relative">
+        <span class="section-badge text-start">TESTIMONIAL</span>
+
+        <h2 class="testimonial-section-title text-start w-75 pt-3">
+          What people say about Us.
+        </h2>
+
+        <!-- Pagination HERE -->
+        <div class="pagination-div">
+          <div class="swiper-pagination custom-pagination"></div>
+        </div>
+      </div>
+      <div class="col-lg-6 position-relative">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/testimonial-img.png" alt="Avatar" height="60" class="rounded-circle">
+              <div class="testimonial-card">
+                <p class="testimonial-text w-75 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                  tortor
+                  tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.</p>
+                <div class="d-flex align-items-center gap-3 mt-4">
+                  <div>
+                    <h5 class="mb-0">John Doe</h5>
+                    <span class="text-muted">Traveler</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/testimonial-img.png" alt="Avatar" height="60" class="rounded-circle">
+              <div class="testimonial-card">
+                <p class="testimonial-text w-75 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                  tortor
+                  tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.</p>
+                <div class="d-flex align-items-center gap-3 mt-4">
+                  <div>
+                    <h5 class="mb-0">John Doe</h5>
+                    <span class="text-muted">Traveler</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/testimonial-img.png" alt="Avatar" height="60" class="rounded-circle">
+              <div class="testimonial-card">
+                <p class="testimonial-text w-75 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                  tortor
+                  tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.</p>
+                <div class="d-flex align-items-center gap-3 mt-4">
+                  <div>
+                    <h5 class="mb-0">John Doe</h5>
+                    <span class="text-muted">Traveler</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -------------------- -->
+  <!-- logo slides section -->
+  <!-- -------------------- -->
+  <div class="container logo-slides-section">
+    <div class="swiper logoSwiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <img src="./img/logo (2).png" alt="Logo 1">
+        </div>
+
+        <div class="swiper-slide">
+          <img src="./img/logo (3).png" alt="Logo 2">
+        </div>
+
+        <div class="swiper-slide">
+          <img src="./img/logo (4).png" alt="Logo 3">
+        </div>
+
+        <div class="swiper-slide">
+          <img src="./img/logo (5).png" alt="Logo 4">
+        </div>
+
+        <div class="swiper-slide">
+          <img src="./img/logo (6).png" alt="Logo 5">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/logo (2).png" alt="Logo 1">
+        </div>
+
+        <div class="swiper-slide">
+          <img src="./img/logo (3).png" alt="Logo 2">
+        </div>
+
+        <div class="swiper-slide">
+          <img src="./img/logo (4).png" alt="Logo 3">
+        </div>
+
+        <div class="swiper-slide">
+          <img src="./img/logo (5).png" alt="Logo 4">
+        </div>
+
+        <div class="swiper-slide">
+          <img src="./img/logo (6).png" alt="Logo 5">
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid cta-section">
+    <div class="container">
+      <div class="position-relative">
+        <div class="cta-icon-box">
+          <img src="./img/send.svg" alt="">
+        </div>
+      </div>
+      <div class="cta-content">
+        <h2 class="cta-header w-75 mx-auto">Subscribe to get information, latest news and other interesting offers about
+          Jadoo</h2>
+        <div class="d-flex flex-wrap justify-content-center mt-5">
+          <input type="email" class="form-control" placeholder="Enter your email">
+          <button class="btn btn-red text-white text-bold ms-2 px-5">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container footer-section section-margin">
+      <div class="row align-items-start text-center text-lg-start">
+        <!-- Left column -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <img src="./img/Logo.png" alt="" style="margin-bottom: 1vh;">
+          <p class="pt-3">
+            Book your trip in minute, get full Control for much longer.
+          </p>
+        </div>
+
+        <!-- Middle column -->
+        <div class="col-lg-5 col-md-6 mb-4">
+          <div class="d-flex justify-content-between flex-wrap gap-4">
+
+            <div>
+              <h5 class="ft-heading">Company</h5>
+              <ul class="list-unstyled sub-heading">
+                <li><a href="#about">About</a></li>
+                <li><a href="#careers">Careers</a></li>
+                <li><a href="#mobile">Mobile</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h5 class="ft-heading">Contact</h5>
+              <ul class="list-unstyled sub-heading">
+                <li><a href="#faq">Help / FAQ</a></li>
+                <li><a href="#press">Press</a></li>
+                <li><a href="#affiliates">Affiliates</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h5 class="ft-heading">More</h5>
+              <ul class="list-unstyled sub-heading">
+                <li><a href="#airlinefees">Airlinefees</a></li>
+                <li><a href="#airline">Airline</a></li>
+                <li><a href="#lowtips">Low fare tips</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right column -->
+        <!-- Right column -->
+        <div class="col-lg-4 text-center col-md-12 mb-4">
+
+          <!-- Social Icons -->
+          <div class="d-flex justify-content-center gap-3 mb-4">
+            <div class="ft-social-icon">
+              <i class="fab fa-facebook-f"></i>
+            </div>
+            <div class="ft-social-icon instagram">
+              <i class="fab fa-instagram"></i>
+            </div>
+            <div class="ft-social-icon">
+              <i class="fab fa-twitter"></i>
+            </div>
+          </div>
+
+          <!-- Heading -->
+          <h5 class="mb-3">Discover our app</h5>
+
+        </div>
+
+
+      </div>
+      <p class="text-center pt-4">All rights reserved@jadoo.co</p>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script>
+    const logoSwiper = new Swiper(".logoSwiper", {
+      slidesPerView: 5,
+      spaceBetween: 40,
+      loop: true,
+      speed: 3000,
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+        },
+        576: {
+          slidesPerView: 3,
+        },
+        992: {
+          slidesPerView: 5,
+        }
+      }
+    });
+  </script>
+
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      loop: true,
+      pagination: {
+        el: '.custom-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.custom-next',
+        prevEl: '.custom-prev',
+      },
+    });
+
+  </script>
+  <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
